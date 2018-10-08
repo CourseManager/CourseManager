@@ -4,12 +4,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>登陆页面</title>
     <link rel="stylesheet" href="{% static 'course/css/index.css' %}">
 </head>
 <body>
 
-<h1>这是一个测试页面</h1>
+<div id="main">
+    <div id="background">
+        <img src="{% static 'course/img/index/download.jpg' %}">
+    </div>
+
+    <div id="login">
+        <h1>统一身份认证账号登陆</h1>
+        <hr>
+        <img src="{% static 'course/img/index/hustpass.png' %}" alt="">
+
+        <form action="" method="post">
+            <label for="username">账号</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="password">密码</label>
+            <input type="password" name="username" id="password">
+            <br>
+            <input type="submit" value="确定" id="submit">
+        </form>
+
+    </div>
+
+    <div id="footer">
+    </div>
+</div>
 
 </body>
 </html>
