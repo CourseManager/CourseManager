@@ -23,6 +23,7 @@
     text-align: center;
 }
 
+
 #login>img{
     width: 85%;
     cursor: pointer;
@@ -30,22 +31,33 @@
     margin-left: 7.5%;
 }
 
+
 #login #username,#password{
-    font-size: 26px;
     width: 75%;
     height: 32px;
-    padding-left: 5%;
+    font-size: 14px;
+    margin-left: 3%;
+    padding-left: 10px;
     margin-top: 8px;
-    background-color:#FAFEC3 ;
-    border: 1px solid gainsboro;
+    background-color:#FAFEC3;
+    border: none;
 }
 
 #login label{
+    height: 26px;
     font-size:26px;
 }
 
 #login #submit{
-    width: 75px;
-    height: 75px;
-    font-size: 45px;
+    -webkit-appearance: button;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 180px;
+    height: 90px;
+    font-size: 35px;
+    border: none;
+}
+
+#verification{
+    margin-top: 120px;
 }
