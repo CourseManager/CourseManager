@@ -19,12 +19,13 @@
         <hr>
         <img src="{% static 'course/img/index/hustpass.png' %}" alt="">
 
-        <form action="" method="post">
+        <form action="/select%1" method="post">
+            {% csrf_token %}
             <label for="username">账号</label>
             <input type="text" name="username" id="username">
             <br>
             <label for="password">密码</label>
-            <input type="password" name="username" id="password">
+            <input type="password" name="password" id="password">
             <br>
             <input type="submit" value="确定" id="submit">
         </form>
